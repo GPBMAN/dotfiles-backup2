@@ -1,0 +1,103 @@
+@import "/home/sus/.config/colortheming/colors.css";
+
+* {
+  font-family: "Inter", "JetBrainsMono Nerd Font";
+  font-size: 14px;
+  border: none;
+}
+
+window#waybar {
+  background: @background;
+}
+
+#workspaces {
+  margin-top: 10px;
+}
+
+#workspaces button {
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding: 6px;
+  margin: 5 10px;
+  background: linear-gradient(to top, @background, @active-workspace2);
+  color: transparent;
+  min-height: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @background;
+  background: linear-gradient(to top, @active-workspace1, @active-workspace2);
+  min-height: 35px;
+  font-weight: 800;
+}
+
+#workspaces button:hover {
+  color: @background;
+  font-size: 17px;
+  font-weight: bold;
+  min-height: 25px;
+  background: linear-gradient(to bottom, @active-workspace1, @active-workspace2);
+}
+
+#workspaces button.active:hover {
+  color: @background;
+  background: linear-gradient(to bottom, @active-workspace1, @active-workspace2);
+  min-height: 35px;
+  font-weight: bold;
+}
+
+#clock {
+  margin: 10px;
+  font-family: "Inter";
+  font-weight: 900;
+  color: @blue;
+}
+
+#pulseaudio-slider trough {
+  min-width: 2px;
+  min-height: 100px;
+  background: @yellow;
+}
+
+#pulseaudio-slider highlight {
+  background: @active-workspace1;
+}
+
+#pulseaudio-slider slider {
+  min-height: 5px;
+  min-width: 2px;
+  background: @active-workspace2;
+}
+
+#sound {
+  margin: 20 0px;
+  color: @purple;
+}
+
+#custom-sepparator {
+  margin: 5 0px;
+  color: @orange;
+}
+
+#custom-power {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: @red;
+}
+
+#battery {
+  margin: 5px;
+  color: @green;
+}
+
+#network {
+  color: @yellow;
+}
+
+#mpris {
+  padding: 4 8px;
+  font-weight: 600;
+  color: @yellow;
+}
+
