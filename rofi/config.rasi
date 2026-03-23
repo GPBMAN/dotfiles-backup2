@@ -1,0 +1,16 @@
+/* ROUNDED THEME FOR ROFI */
+/* Author: Newman Sanchez (https://github.com/newmanls) */
+
+* {
+    bg0:    #00000a;
+    bg1:    #0f101e;
+    bg2:    #000000;
+    bg3:    #0F101E;
+
+    fg0:    #0b0014;
+    fg1:    #4c4c4c;
+    fg2:    #636363;
+    fg3:    #beb7a4;
+}
+
+@import "./template.rasi"
